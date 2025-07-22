@@ -1,0 +1,24 @@
+/* General config */
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+footer{
+    color: white;
+    background-color: #2B3035;
+}
+/* Responsive Design */
+
+@media(min-width:900px){
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
