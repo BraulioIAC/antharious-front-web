@@ -8,17 +8,84 @@ body{
     min-height: 100vh;
 }
 
+h2{
+    text-align: center;
+}
+
 footer{
     color: white;
     background-color: #2B3035;
+    height: 20vh;
 }
+
+footer span{
+    font-size: smaller;
+}
+
+footer img{
+    height: 8rem;
+    width: auto;
+}
+
+.social-media img{
+    height: 35px;
+    width: auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.antharious-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.acerca-de, .videos, .sets, .fotografia, .contrataciones{
+    padding: 1.5rem;
+}
+
+
 /* Responsive Design */
 
 @media(min-width:900px){
+    /* Estilo de la navbar cuando no está contraída */
     .container-fluid {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media(max-width:768px){
+    footer span{
+        font-size: x-small;
+    }
+    .antharious-info img{
+        width: 25px;
+    }
+    .antharious-info{
+        gap: 0;
+    }
+    footer img{
+        height: 6rem;
+        width: auto;
+    }
+
+}
+
+@media(max-width:425px){
+    .footer{
+        gap: 0;
     }
 }
