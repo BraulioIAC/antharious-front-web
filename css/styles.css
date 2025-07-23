@@ -1,4 +1,4 @@
-/* General config */
+/* ==================== General config ==================== */
 body{
     margin: 0;
     padding: 0;
@@ -8,54 +8,73 @@ body{
     min-height: 100vh;
 }
 
+.acerca-de, .videos, .sets, .fotografia, .contrataciones{
+    padding: 1.5rem;
+}
+
 h2{
     text-align: center;
 }
 
-footer{
+/* Configuración del footer */
+.footer{
     color: white;
     background-color: #2B3035;
     height: 20vh;
-}
-
-footer span{
-    font-size: smaller;
-}
-
-footer img{
-    height: 8rem;
-    width: auto;
-}
-
-.social-media img{
-    height: 35px;
-    width: auto;
-}
-
-.footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5vw;
 }
-.social-media{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+
+footer span{
+    font-size: smaller;
 }
+
+/* Tamaño de imagen del footer */
+footer img{
+    height: 8rem;
+    width: auto;
+}
+/* Configuración del contenido del footer */
 .antharious-info{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+/* Configuración del div de redes sociales */
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/* Tamaño de iconos del footer */
+.social-media img{
+    height: 35px;
+    width: auto;
+}
 
-.acerca-de, .videos, .sets, .fotografia, .contrataciones{
-    padding: 1.5rem;
+.social-media-logo{
+    filter: brightness(0) saturate(100%) invert(100%);
+    /* transition: filter 0.3s ease; */
+}
+
+/* Hovers */
+
+/* filter: brightness(0) saturate(100%) invert(13%) sepia(96%) saturate(2951%) hue-rotate(319deg) brightness(91%) contrast(105%); */
+/* filter: brightness(0) saturate(100%) invert(70%) sepia(83%) saturate(819%) hue-rotate(8deg) brightness(95%) contrast(105%); */
+/* #C70039 */
+.social-media-logo:hover{
+    filter: brightness(0) saturate(100%) invert(25%) sepia(97%) saturate(3127%) hue-rotate(334deg) brightness(91%) contrast(104%);
+}
+
+.nav-link:hover{
+    color: #C70039 !important;
 }
 
 
-/* Responsive Design */
+/* ==================== Responsive Design ==================== */
 
 @media(min-width:900px){
     /* Estilo de la navbar cuando no está contraída */
