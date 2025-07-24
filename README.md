@@ -13,7 +13,7 @@ Frontend for the web page of the Antharious web
 
 ### Ideal si quieres una web limpia y con estilo visual directo.
 
-Fondo: #121212
+- Fondo: #121212
 - Primario: #E50914 (rojo Netflix)
 - Secundario: #222222 (gris carbón)
 - Texto: #FFFFFF
