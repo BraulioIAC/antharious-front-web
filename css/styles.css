@@ -165,6 +165,9 @@ footer img{
 }
 
 @media(max-width:425px){
+    /* .card-set-div{
+        max-width: 90% !important;
+    } */
     .sets-div p{
         max-width: 100%;
         font-size: medium !important;
@@ -193,7 +196,13 @@ footer img{
         font-size: small !important;
     }
 }
-
+/* Relaciones entre pantalla de teléfono y tablet */
+@media(min-width:426px) and (max-width:575px){
+    /* Espacio que ocupa el card set */
+    .card-set-div{
+        max-width: 75% !important;
+    }
+}
 @media(min-width:425px){
     .card-set{
         margin: 0 !important;
