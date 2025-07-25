@@ -40,7 +40,7 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: 0;
+    padding: 0 3vw 0 3vw;
 }
 .sets-div p{
     font-size: medium;
@@ -49,6 +49,10 @@ h2{
 .card-title{
     text-align: left;
     font-size: 1.2rem;
+}
+
+.btn-card{
+    font-size: 0.8rem !important;
 }
 
 /* Configuración del footer */
@@ -119,6 +123,7 @@ footer img{
         justify-content: center;
         align-items: center;
     }
+    
 }
 
 @media(max-width: 1024px){
@@ -126,7 +131,6 @@ footer img{
     .sets-div p{
         font-size: small;
     }
-
 }
 
 @media(max-width:768px) {
@@ -139,9 +143,9 @@ footer img{
         font-size: medium !important;
     }
 
-    .btn-card{
+    /* .btn-card{
         font-size: small !important;
-    }
+    } */
     
     .card-set-div{
         max-width: 90%;
@@ -165,17 +169,12 @@ footer img{
 }
 
 @media(max-width:425px){
-    /* .card-set-div{
-        max-width: 90% !important;
-    } */
+
     .sets-div p{
         max-width: 100%;
         font-size: medium !important;
     }
 
-    .btn-card{
-        font-size: x-small !important;
-    }
     /* Tamaño horizontal del div que contiene las redes sosciales */
     .antharious-info{
         width: 45vw;
@@ -190,12 +189,30 @@ footer img{
     }
 }
 
-@media (min-width:768px) {
+/* Espacio entre tablet y portátil */
+@media(min-width:769px) and (max-width:1023px){
+    .card-title{
+        text-align: center;
+        font-size: medium;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .btn-card{
-        /* font-size: 0.4rem !important; */
-        font-size: small !important;
+        font-size: 0.66rem !important;
     }
 }
+
+@media (min-width:768px) {
+    .sets-div{
+        gap: 2vw;
+    }
+}
+
 /* Relaciones entre pantalla de teléfono y tablet */
 @media(min-width:426px) and (max-width:575px){
     /* Espacio que ocupa el card set */
@@ -203,6 +220,7 @@ footer img{
         max-width: 75% !important;
     }
 }
+
 @media(min-width:425px){
     .card-set{
         margin: 0 !important;
