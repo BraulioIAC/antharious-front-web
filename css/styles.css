@@ -11,6 +11,7 @@ body{
     /* #2C0F2D */
     /* #6A3E6F */
     /* #3F1342 */
+    /* #865980 */
     background: 
         linear-gradient(90deg, #2B3035, #3F1342);
 
@@ -28,6 +29,12 @@ h2{
 }
 
 /* Configuración de la sección de sets */
+
+.card-set-div{
+    max-width: 55vw;
+    justify-content: center;
+}
+
 .sets-div{
     display: flex;
     flex-direction: row;
@@ -36,17 +43,12 @@ h2{
     gap: 0;
 }
 .sets-div p{
-    max-width: 27vw;
     font-size: medium;
 }
 
 .card-title{
     text-align: left;
     font-size: 1.2rem;
-}
-
-.btn-card{
-    font-size: 0.8rem !important;
 }
 
 /* Configuración del footer */
@@ -99,15 +101,17 @@ footer img{
 /* filter: brightness(0) saturate(100%) invert(70%) sepia(83%) saturate(819%) hue-rotate(8deg) brightness(95%) contrast(105%); */
 /* #C70039 */
 .social-media-logo:hover{
-    filter: brightness(0) saturate(100%) invert(25%) sepia(97%) saturate(3127%) hue-rotate(334deg) brightness(91%) contrast(104%);
+    /* filter: brightness(0) saturate(100%) invert(25%) sepia(97%) saturate(3127%) hue-rotate(334deg) brightness(91%) contrast(104%); */
+    /* filter: brightness(0) saturate(100%) invert(14%) sepia(26%) saturate(2303%) hue-rotate(274deg) brightness(93%) contrast(89%); */
+    /* filter: brightness(0) saturate(100%) invert(22%) sepia(24%) saturate(964%) hue-rotate(282deg) brightness(91%) contrast(90%); */
+    /* filter: brightness(0) saturate(100%) invert(9%) sepia(35%) saturate(1476%) hue-rotate(280deg) brightness(86%) contrast(98%); */
+    filter: brightness(0) saturate(100%) invert(35%) sepia(19%) saturate(773%) hue-rotate(287deg) brightness(88%) contrast(90%);
+
 }
 
 
-
-
 /* ==================== Responsive Design ==================== */
-
-@media(min-width:990px){
+@media(min-width:1024px){
     /* Estilo de la navbar cuando no está contraída */
     .container-fluid {
         display: flex;
@@ -115,40 +119,14 @@ footer img{
         justify-content: center;
         align-items: center;
     }
-    .card{
-        height: 100% !important;
-    }
-    .card-set{
-        width: 17vw !important;
-    }
 }
 
 @media(max-width: 1024px){
 
     .sets-div p{
-        max-width: 25vw;
         font-size: small;
     }
-    .card{
-        width: auto !important;
-        height: 100% !important;
-    }
-    .card-body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    .card-title{
-        text-align: center !important;
-    }
-    .card-title{
-        text-align: left;
-        font-size: small;
-    }
-    .btn-card{
-        font-size: 0.6rem !important;
-    }
+
 }
 
 @media(max-width:768px) {
@@ -159,21 +137,18 @@ footer img{
     }
     .sets-div p{
         font-size: medium !important;
-        max-width: 100% !important;
-    }
-    .card{
-        width: auto;
-        height: 100% !important;
-    }
-    .card-title{
-        text-align: left;
-        font-size: small !important;
     }
 
     .btn-card{
         font-size: small !important;
     }
+    
+    .card-set-div{
+        max-width: 90%;
+    }
 
+
+    /* ======================== Estilos del Footer para =================== */
     footer span{
         font-size: x-small;
     }
@@ -192,18 +167,11 @@ footer img{
 @media(max-width:425px){
     .sets-div p{
         max-width: 100%;
-        font-size: small !important;
+        font-size: medium !important;
     }
 
-    .card-set-div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card{
-        width: 80vw;
-        height: 100% !important;
+    .btn-card{
+        font-size: x-small !important;
     }
     /* Tamaño horizontal del div que contiene las redes sosciales */
     .antharious-info{
@@ -219,15 +187,15 @@ footer img{
     }
 }
 
-@media(min-width:425px){
-    .card-set{
-        margin: 0 !important;
-    }
-}
-
 @media (min-width:768px) {
     .btn-card{
         /* font-size: 0.4rem !important; */
-        font-size: x-small !important;
+        font-size: small !important;
+    }
+}
+
+@media(min-width:425px){
+    .card-set{
+        margin: 0 !important;
     }
 }
