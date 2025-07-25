@@ -50,9 +50,23 @@ h2{
     text-align: left;
     font-size: 1.2rem;
 }
-
+.card{
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .btn-card{
     font-size: 0.8rem !important;
+    transition: background-color 0.5s ease !important;
+}
+    /* #2C0F2D */
+    /* #6A3E6F */
+    /* #3F1342 */
+    /* #865980 */
+.btn-card:hover{
+    background-color: #6B1E78 !important;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 /* Configuración del footer */
@@ -96,7 +110,7 @@ footer img{
 
 .social-media-logo{
     filter: brightness(0) saturate(100%) invert(100%);
-    /* transition: filter 0.3s ease; */
+    transition: filter 0.3s ease;
 }
 
 /* Hovers */
@@ -110,7 +124,7 @@ footer img{
     /* filter: brightness(0) saturate(100%) invert(22%) sepia(24%) saturate(964%) hue-rotate(282deg) brightness(91%) contrast(90%); */
     /* filter: brightness(0) saturate(100%) invert(9%) sepia(35%) saturate(1476%) hue-rotate(280deg) brightness(86%) contrast(98%); */
     filter: brightness(0) saturate(100%) invert(35%) sepia(19%) saturate(773%) hue-rotate(287deg) brightness(88%) contrast(90%);
-
+    /* filter: invert(15%) sepia(90%) saturate(750%) hue-rotate(280deg); */
 }
 
 
