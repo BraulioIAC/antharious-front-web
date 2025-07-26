@@ -84,7 +84,7 @@ h2{
 .footer{
     color: white;
     background-color: #2B3035;
-    height: 25vh !important;
+    height: 26vh !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -98,7 +98,7 @@ footer span{
 
 /* Tamaño de imagen del footer */
 footer img{
-    height: 140px;
+    height: 15vh;
     width: auto;
 }
 /* Configuración del contenido del footer */
@@ -138,6 +138,9 @@ footer img{
     .contrataciones-form{
         width: 60vw !important;
     }
+    form input, form label, form button, form textarea{
+        font-size: small !important;
+    }
 }
 
 @media(max-width:768px) {
@@ -158,7 +161,6 @@ footer img{
     .card-set-div{
         max-width: 90%;
     }
-
 
     /* ======================== Estilos del Footer para =================== */
     footer span{
@@ -194,6 +196,7 @@ footer img{
     .footer{
         gap: 1rem;
     }
+
     /* Texto centrado para el span de copyright */
     footer span{
         text-align: center;
@@ -216,11 +219,7 @@ footer img{
     .btn-card{
         font-size: 0.66rem !important;
     }
-    
-    .footer{
-        height: 35vh !important;
-    }
-}
+} 
 
 /* Relaciones entre pantalla de teléfono y tablet */
 @media(min-width:426px) and (max-width:767px){
@@ -232,6 +231,11 @@ footer img{
     .card-set-div{
         max-width: 75% !important;
     }
+/* 
+    .footer{
+        height: 30vh !important;
+    } */
+
 }
 
 /* 1024px */
