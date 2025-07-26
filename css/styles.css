@@ -201,10 +201,13 @@ footer img{
     footer span{
         text-align: center;
     }
-    .social-media img{
+    /* .social-media img{
         height: auto;
         width: 5vw;
-}   
+    }    */
+    #antharious-logo{
+        display: none;
+    }
 
 }
 
