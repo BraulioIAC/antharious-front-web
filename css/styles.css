@@ -98,7 +98,7 @@ footer span{
 
 /* Tamaño de imagen del footer */
 footer img{
-    height: 15vh;
+    height: 17.2vh;
     width: auto;
 }
 /* Configuración del contenido del footer */
@@ -201,6 +201,11 @@ footer img{
     footer span{
         text-align: center;
     }
+    .social-media img{
+        height: auto;
+        width: 5vw;
+}   
+
 }
 
 /* Espacio entre tablet y portátil */
@@ -219,6 +224,10 @@ footer img{
     .btn-card{
         font-size: 0.66rem !important;
     }
+    .social-media img{
+        height: auto;
+        width: 3.5vw !important;
+}   
 } 
 
 /* Relaciones entre pantalla de teléfono y tablet */
