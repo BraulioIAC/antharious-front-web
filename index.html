@@ -10,7 +10,8 @@
   <body class="grid-container">
     <!-- navbar -->
     <header class="w-100">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body w-100"  data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body w-100"  data-bs-theme="dark"
+        style="background-image: url('./assets/img/fondo_2.jpg'); background-size: cover; background-position: center;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" >Antharious</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +70,7 @@
             <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 card-set-div" style="margin: 0;"> 
                 <div class="col card-set">
                     <div class="card h-100 d-flex flex-column">
-                    <img src="./assets/img/rock_set_1.png" class="card-img-top" alt="..." loading="lazy">
+                    <img src="./assets/img/rock_set_1.png" class="card-img-top" alt="rock_set_1" loading="lazy">
                     <div class="card-body mt-auto" style="justify-content: center; align-items: center;">
                         <h5 class="card-title">Rock 1</h5>
                         <!-- <p class="card-text"></p> -->
@@ -79,7 +80,7 @@
                 </div>
                 <div class="col card-set">
                     <div class="card h-100 d-flex flex-column" >
-                    <img src="./assets/img/rock_set_2.png" class="card-img-top" alt="..." loading="lazy">
+                    <img src="./assets/img/rock_set_2.png" class="card-img-top" alt="rock_set_2" loading="lazy">
                     <div class="card-body mt-auto">
                         <h5 class="card-title">Rock 2</h5>
                         <!-- <p class="card-text"></p> -->
@@ -89,7 +90,7 @@
                 </div>
                 <div class="col card-set">
                     <div class="card h-100 d-flex flex-column">
-                    <img src="./assets/img/ska_set.png" class="card-img-top" alt="..." loading="lazy">
+                    <img src="./assets/img/ska_set.png" class="card-img-top" alt="ska_set" loading="lazy">
                     <div class="card-body mt-auto">
                         <h5 class="card-title">Ska</h5>
                         <!-- <p class="card-text"></p> -->
@@ -118,18 +119,41 @@
     </section>
 
     <!-- Formulario -->
-    <section class="contrataciones" id="contrataciones">
-        <h2>Contrataciones</h2>
-
+    <section class="contrataciones d-flex justify-content-center align-items-center" id="contrataciones"
+    style="background-image: url('./assets/img/fondo_1.jpg'); background-size: cover; background-position: center;">
+        <div class="contrataciones-form">
+            <h2>Contrataciones</h2>
+            <form action="">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Juan Carlos">
+                    <label for="nameInput">Nombre(s)</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lastNameInput" placeholder="Bodoque">
+                    <label for="lastNameInput">Apellido(s)</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="numberInput" placeholder="55 5555 5555">
+                    <label for="numberInput">Coloca tu número</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                    <label for="emailInput">Coloca tu email</label>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="descriptionInput" rows="3" placeholder="Descripción"></textarea>
+                </div>
+                <button type="button" class="btn btn-dark d-block mx-auto">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
-        <img src="./assets/icons/antharious/Antharious_B.png" alt="antharious-logo" >
+        <img src="./assets/img/antharious_b.png" alt="antharious-logo" >
         <div class="antharious-info">
             <!-- https://www.iconfinder.com/social-media-icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/share/16AH3evPxh/" target="_blank"><img src="./assets/icons/social_media/5305154_fb_facebook_facebook logo_icon.svg" alt="fb_logo" class="social-media-logo"></a>
-                <!-- <a href="#"><img src="./assets/icons/social_media/5305166_call_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp_logo" class="social-media-logo"></a> -->
                 <a href="https://www.instagram.com/antharious?igsh=MWQ2ZTcxd3cxNjdzZA==" target="_blank"><img src="./assets/icons/social_media/5335781_camera_instagram_social media_instagram logo_icon.svg" alt="instagram_logo" class="social-media-logo"></a>
                 <a href="#"><img src="./assets/icons/social_media/5305170_bird_social media_social network_tweet_twitter_icon.svg" alt="twitter_logo" class="social-media-logo"></a>
                 <a href="#"><img src="./assets/icons/social_media/5282548_play_player_video_youtube_youtuble logo_icon.svg" alt="twitter_logo" class="social-media-logo"></a>

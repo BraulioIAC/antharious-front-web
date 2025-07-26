@@ -21,8 +21,20 @@ Frontend for the web page of the Antharious web
 
 ### Moderna, brillante, profesional.
 
-- Fondo claro: #F5F5F5
-- Primario: #C70039 (rojo oscuro)
-- Secundario: #FFC300 (amarillo vibrante)
-- Texto: #111111
-- Acento adicional: #900C3F (burdeos)
+###Moderna, brillante, profesional.
+
+-Fondo claro: #F5F5F5
+-Primario: #C70039 (rojo oscuro)
+-Secundario: #FFC300 (amarillo vibrante)
+-Texto: #111111
+-Acento adicional: #900C3F (burdeos)
+
+Imagenes sacadas de internet
+[text](https://www.freepik.es/foto-gratis/interior-estilo-grunge-suelo-placa-metalica_918268.htm#fromView=keyword&page=1&position=19&uuid=ac548804-92f0-4bb1-902c-79d3f28bf7d1&query=Fondos+Rock)
+
+[text](https://www.freepik.es/vector-gratis/patron-costuras-grunge-calaveras_8083820.htm#fromView=keyword&page=1&position=1&uuid=ac548804-92f0-4bb1-902c-79d3f28bf7d1&query=Fondos+Rock)
+
+[text](https://www.freepik.es/foto-gratis/fondo-metal-grunge-textura-angustiada-roja_5493171.htm#fromView=keyword&page=1&position=43&uuid=ac548804-92f0-4bb1-902c-79d3f28bf7d1&query=Fondos+Rock)
+
+[text](https://www.freepik.es/vector-gratis/fondo-niebla-dinamico-realista_18777691.htm#fromView=search&page=1&position=0&uuid=a94806fe-30b7-4deb-a643-47613c223448&query=Fondos+concierto+horizontal)
+
