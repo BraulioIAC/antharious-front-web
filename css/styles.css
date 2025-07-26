@@ -1,41 +1,40 @@
 /* ==================== General config ==================== */
-body{
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
-    grid-template-columns: 1fr;
-    min-height: 100vh;
-}
-.navbar{
     /* #2C0F2D */
     /* #6A3E6F */
     /* #3F1342 */
     /* #865980 */
-    background: 
-        linear-gradient(90deg, #2B3035, #3F1342);
-
+/* ==================== body config ==================== */
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1.5fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
 }
-/* .nav-link:hover{
-    color: #C70039 !important;
+
+/* .navbar{
+    background: linear-gradient(90deg, #2B3035, #3F1342); Color de background de la navbar
 } */
-.acerca-de, .videos, .sets, .fotografia, .contrataciones{
-    padding: 1.5rem;
+
+.acerca-de, .videos, .sets, .fotografia{
+    padding: 1.5rem; /* Espaciado deneral de los elementos */
 }
 
 h2{
-    text-align: center;
-    padding-bottom: 2vh;
+    text-align: center; /* Centrado del texto de los titulos */
+    padding-bottom: 2vh; /* Espaciado inferior de los titulos */
 }
 
-/* Configuración de la sección de sets */
+/* ==================== Configuración de la sección de sets ==================== */
 
 .card-set-div{
-    max-width: 55vw;
-    justify-content: center;
+    max-width: 55vw; /* Espacio horizontal que abarca el ancho de las cards */
+    justify-content: center; /* Centrado de las cards */
 }
 
 .sets-div{
+    /* Configuración de div que contiene las cards y el texto */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,37 +42,49 @@ h2{
     padding: 0 3vw 0 3vw;
 }
 .sets-div p{
-    font-size: medium;
+    font-size: medium; /* Tamaño del texto de la descripción */
 }
 
 .card-title{
-    text-align: left;
-    font-size: 1.2rem;
+    text-align: left; /* Titulo de la card a la izquierda */
+    font-size: 1.2rem; /* Tamaño del titulo de la card */
 }
 .card{
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out; /* Animación de la card con un hover */
 }
 .card:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35); /* Sombreado */
 }
 .btn-card{
-    font-size: 0.8rem !important;
-    transition: background-color 0.5s ease !important;
+    font-size: 0.8rem !important;/* Tamaño de fuente del botón de la card */
+    transition: background-color 0.5s ease !important; /* Animación del con un hover */
 }
-    /* #2C0F2D */
-    /* #6A3E6F */
-    /* #3F1342 */
-    /* #865980 */
-.btn-card:hover{
-    background-color: #6B1E78 !important;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+.btn{
+    transition: background-color 0.5s ease !important; /* Animación del con un hover */
+}
+.btn:hover, .btn:hover{
+    background-color: #6B1E78 !important; /* Cambio de background */
 }
 
-/* Configuración del footer */
+/* ==================== Configuración de la sección de contrataciones ==================== */
+.contrataciones {
+  overflow: hidden;
+}
+
+.contrataciones-form {
+    color: white !important;
+    background-color: rgba(193, 180, 146, 0.40);
+     /* background-color: rgba(38, 38, 38, 0.40);  */
+    padding: 3vw;
+    border-radius: 8px;
+    width: 50vw;
+    /* height: auto; */
+}
+/* ==================== Configuración del footer ==================== */
 .footer{
     color: white;
     background-color: #2B3035;
-    height: 20vh;
+    height: 25vh !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,7 +98,7 @@ footer span{
 
 /* Tamaño de imagen del footer */
 footer img{
-    height: 8rem;
+    height: 140px;
     width: auto;
 }
 /* Configuración del contenido del footer */
@@ -113,41 +124,28 @@ footer img{
     transition: filter 0.3s ease;
 }
 
-/* Hovers */
-
-/* filter: brightness(0) saturate(100%) invert(13%) sepia(96%) saturate(2951%) hue-rotate(319deg) brightness(91%) contrast(105%); */
-/* filter: brightness(0) saturate(100%) invert(70%) sepia(83%) saturate(819%) hue-rotate(8deg) brightness(95%) contrast(105%); */
-/* #C70039 */
 .social-media-logo:hover{
-    /* filter: brightness(0) saturate(100%) invert(25%) sepia(97%) saturate(3127%) hue-rotate(334deg) brightness(91%) contrast(104%); */
-    /* filter: brightness(0) saturate(100%) invert(14%) sepia(26%) saturate(2303%) hue-rotate(274deg) brightness(93%) contrast(89%); */
-    /* filter: brightness(0) saturate(100%) invert(22%) sepia(24%) saturate(964%) hue-rotate(282deg) brightness(91%) contrast(90%); */
-    /* filter: brightness(0) saturate(100%) invert(9%) sepia(35%) saturate(1476%) hue-rotate(280deg) brightness(86%) contrast(98%); */
     filter: brightness(0) saturate(100%) invert(35%) sepia(19%) saturate(773%) hue-rotate(287deg) brightness(88%) contrast(90%);
-    /* filter: invert(15%) sepia(90%) saturate(750%) hue-rotate(280deg); */
 }
 
 
 /* ==================== Responsive Design ==================== */
-@media(min-width:1024px){
-    /* Estilo de la navbar cuando no está contraída */
-    .container-fluid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-}
 
 @media(max-width: 1024px){
-
     .sets-div p{
         font-size: small;
+    }
+    .contrataciones-form{
+        width: 60vw !important;
     }
 }
 
 @media(max-width:768px) {
+    .contrataciones-form{
+        width: 80vw !important;
+    }
+
+    /* ======================== Estilos del Formulario =================== */
     .sets-div{
         flex-direction: column !important;
         align-items: center !important;
@@ -156,10 +154,6 @@ footer img{
     .sets-div p{
         font-size: medium !important;
     }
-
-    /* .btn-card{
-        font-size: small !important;
-    } */
     
     .card-set-div{
         max-width: 90%;
@@ -168,10 +162,11 @@ footer img{
 
     /* ======================== Estilos del Footer para =================== */
     footer span{
-        font-size: x-small;
+        font-size: x-small; /* Tamaño de fuente */
     }
     .antharious-info img{
         width: 25px;
+
     }
     .antharious-info{
         gap: 1.5vw;
@@ -183,7 +178,9 @@ footer img{
 }
 
 @media(max-width:425px){
-
+    body{
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 0.4fr auto !important; /* Relación para no tener tanta altura en el formulario */
+    }
     .sets-div p{
         max-width: 100%;
         font-size: medium !important;
@@ -219,19 +216,38 @@ footer img{
     .btn-card{
         font-size: 0.66rem !important;
     }
+    
+    .footer{
+        height: 35vh !important;
+    }
+}
+
+/* Relaciones entre pantalla de teléfono y tablet */
+@media(min-width:426px) and (max-width:767px){
+/* @media(min-width:426px) and (max-width:575px){ */
+    body{
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 0.65fr auto !important; /* Relación para no tener tanta altura en el formulario */
+    }
+    /* Espacio que ocupa el card set */
+    .card-set-div{
+        max-width: 75% !important;
+    }
+}
+
+/* 1024px */
+@media(min-width:992px){
+    /* Estilo de la navbar cuando no está contraída */
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
 }
 
 @media (min-width:768px) {
     .sets-div{
         gap: 2vw;
-    }
-}
-
-/* Relaciones entre pantalla de teléfono y tablet */
-@media(min-width:426px) and (max-width:575px){
-    /* Espacio que ocupa el card set */
-    .card-set-div{
-        max-width: 75% !important;
     }
 }
 
