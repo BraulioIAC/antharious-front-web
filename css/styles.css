@@ -45,14 +45,14 @@ h2{
     font-size: medium; /* Tamaño del texto de la descripción */
 }
 
-.card-title{
+.card-set-title{
     text-align: left; /* Titulo de la card a la izquierda */
     font-size: 1.2rem; /* Tamaño del titulo de la card */
 }
-.card{
+.card-s{
     transition: box-shadow 0.3s ease-in-out; /* Animación de la card con un hover */
 }
-.card:hover{
+.card-s:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35); /* Sombreado */
 }
 .btn-card{
@@ -62,10 +62,23 @@ h2{
 .btn{
     transition: background-color 0.5s ease !important; /* Animación del con un hover */
 }
-.btn:hover, .btn:hover{
+.btn:hover, .btn-card:hover{
     background-color: #6B1E78 !important; /* Cambio de background */
 }
 
+/* ==================== Configuración de la sección de fotografía ==================== */
+.fotografia{
+    padding: 0 10vw 10vh 10vw;
+}
+
+.fotografia-card{
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Animación de la card con un hover */
+}
+.fotografia-card:hover{
+    /* box-shadow: 0 10px 34px rgba(0, 0, 0, 0.50); Sombreado */
+    box-shadow: -8px 6px 10px rgba(63, 19, 66, 0.50);
+    transform: scale(1.05);
+}
 /* ==================== Configuración de la sección de contrataciones ==================== */
 .contrataciones {
   overflow: hidden;
@@ -82,9 +95,10 @@ h2{
 }
 /* ==================== Configuración del footer ==================== */
 .footer{
-    color: white;
-    background-color: #2B3035;
-    height: 26vh !important;
+    color: white; /* Color de letra */
+    background-color: #2B3035; /* Color de fondo */
+    height: 26vh !important; /* Altura */
+    /* Display settings */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,15 +107,15 @@ h2{
 }
 
 footer span{
-    font-size: smaller;
+    font-size: smaller; /* Espacio entre elementos del footer */
 }
 
 /* Tamaño de imagen del footer */
 footer img{
-    height: 17.2vh;
+    height: 16vh;
     width: auto;
 }
-/* Configuración del contenido del footer */
+/* Configuración del contenido de redes del footer (texto + iconos) */
 .antharious-info{
     display: flex;
     flex-direction: column;
@@ -144,20 +158,24 @@ footer img{
 }
 
 @media(max-width:768px) {
+    /* ======================== Estilos del Formulario =================== */
+    /* Ancho que ocupa el formulario */
     .contrataciones-form{
         width: 80vw !important;
     }
 
     /* ======================== Estilos del Formulario =================== */
+    /* Cambio en el acomo de los elementos del set (texto + cards) */
     .sets-div{
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
     }
+    /* Tamaño del párrafo en sets */
     .sets-div p{
         font-size: medium !important;
     }
-    
+    /* Ancho del div de las cards */
     .card-set-div{
         max-width: 90%;
     }
@@ -173,21 +191,20 @@ footer img{
     .antharious-info{
         gap: 1.5vw;
     }
-    footer img{
-        height: 6rem;
-        width: auto;
+    .fotografia{
+        padding-bottom: 3vh;
     }
 }
 
 @media(max-width:425px){
+    /* Cambio en la distribución de los elementos del body para no agrandar tanto el formulario */
     body{
-        grid-template-rows: auto 1fr 1fr 1fr 1fr 0.4fr auto !important; /* Relación para no tener tanta altura en el formulario */
+        grid-template-rows: auto 1fr 1fr 1fr 0.3fr 0.4fr auto !important; /* 0.4 -> Relación para no tener tanta altura en el formulario */
     }
     .sets-div p{
         max-width: 100%;
         font-size: medium !important;
     }
-
     /* Tamaño horizontal del div que contiene las redes sosciales */
     .antharious-info{
         width: 45vw;
@@ -201,23 +218,26 @@ footer img{
     footer span{
         text-align: center;
     }
-    /* .social-media img{
-        height: auto;
-        width: 5vw;
-    }    */
+
     #antharious-logo{
         display: none;
     }
 
 }
 
+@media(max-height:600px){
+    #antharious-logo{
+        display: none !important;
+    }
+}
+
 /* Espacio entre tablet y portátil */
 @media(min-width:769px) and (max-width:1023px){
-    .card-title{
+    .card-set-title{
         text-align: center;
         font-size: medium;
     }
-    .card-body{
+    .card-set-body{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -237,20 +257,23 @@ footer img{
 @media(min-width:426px) and (max-width:767px){
 /* @media(min-width:426px) and (max-width:575px){ */
     body{
-        grid-template-rows: auto 1fr 1fr 1fr 1fr 0.65fr auto !important; /* Relación para no tener tanta altura en el formulario */
+        grid-template-rows: auto 1fr 1fr 1fr 0.5fr 0.65fr auto !important; /* Relación para no tener tanta altura en el formulario */
     }
     /* Espacio que ocupa el card set */
     .card-set-div{
         max-width: 75% !important;
     }
-/* 
-    .footer{
-        height: 30vh !important;
+    /* Espacio entre las filas de las cards */
+    .card-set{
+        padding-bottom: 3vh !important;
+    }
+    /* Se quita el logo para pantallas de movil y telefono */
+    /* #antharious-logo{
+        display: none;
     } */
 
 }
 
-/* 1024px */
 @media(min-width:992px){
     /* Estilo de la navbar cuando no está contraída */
     .container-fluid {
