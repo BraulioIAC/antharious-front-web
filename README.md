@@ -38,3 +38,4 @@ Imagenes sacadas de internet
 
 [text](https://www.freepik.es/vector-gratis/fondo-niebla-dinamico-realista_18777691.htm#fromView=search&page=1&position=0&uuid=a94806fe-30b7-4deb-a643-47613c223448&query=Fondos+concierto+horizontal)
 
+[text](https://www.freepik.es/foto-gratis/tambor-instrumento-musical-pedal-sobre-fondo-negro_184338608.htm#fromView=search&page=1&position=48&uuid=7bdabcdb-0a50-4a0e-a2e2-7b13d4f73611&query=music+wallpaper+horizontal)
