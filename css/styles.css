@@ -12,6 +12,20 @@ body{
     grid-template-columns: 1fr;
     min-height: 100vh;
 }
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+
 
 /* .navbar{
     background: linear-gradient(90deg, #2B3035, #3F1342); Color de background de la navbar
@@ -50,10 +64,11 @@ h2{
     font-size: 1.2rem; /* Tamaño del titulo de la card */
 }
 .card-s{
-    transition: box-shadow 0.3s ease-in-out; /* Animación de la card con un hover */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Animación de la card con un hover */
 }
 .card-s:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35); /* Sombreado */
+    transform: scale(1.05);
 }
 .btn-card{
     font-size: 0.8rem !important;/* Tamaño de fuente del botón de la card */
@@ -129,7 +144,7 @@ footer img{
 }
 /* Tamaño de iconos del footer */
 .social-media img{
-    height: 35px;
+    height: 2.3rem;
     width: auto;
 }
 
@@ -155,6 +170,7 @@ footer img{
     form input, form label, form button, form textarea{
         font-size: small !important;
     }
+
 }
 
 @media(max-width:768px) {
@@ -247,10 +263,6 @@ footer img{
     .btn-card{
         font-size: 0.66rem !important;
     }
-    .social-media img{
-        height: auto;
-        width: 3.5vw !important;
-}   
 } 
 
 /* Relaciones entre pantalla de teléfono y tablet */
@@ -267,11 +279,9 @@ footer img{
     .card-set{
         padding-bottom: 3vh !important;
     }
-    /* Se quita el logo para pantallas de movil y telefono */
-    /* #antharious-logo{
-        display: none;
-    } */
-
+    #antharious-logo{
+        display: none !important;
+    }
 }
 
 @media(min-width:992px){
