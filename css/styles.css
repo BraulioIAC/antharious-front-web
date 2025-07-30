@@ -8,7 +8,9 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 1.5fr auto;
+    /* con sección de videos */
+    /* grid-template-rows: auto 0.5fr 1fr 1fr 1fr 1fr auto; */
+    grid-template-rows: auto auto auto 1fr 1fr auto;
     grid-template-columns: 1fr;
     min-height: 100vh;
 }
@@ -25,20 +27,37 @@ body{
   font-style: normal;
 }
 
-
-
-/* .navbar{
-    background: linear-gradient(90deg, #2B3035, #3F1342); Color de background de la navbar
-} */
-
-.acerca-de, .videos, .sets, .fotografia{
+.sets, .fotografia{
     padding: 1.5rem; /* Espaciado deneral de los elementos */
 }
 
 h2{
     text-align: center; /* Centrado del texto de los titulos */
-    padding-bottom: 2vh; /* Espaciado inferior de los titulos */
+    padding: 5vh 0 5vh 0; /* Espaciado inferior de los titulos */
 }
+/* ==================== Configuración de la sección acerca de ==================== */
+.acerca-de {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(227, 226, 226);
+    margin: 0 !important;
+    padding: 0 !important;
+    background-size: cover;
+    background-position: center;
+}
+.overlay p {
+    padding: 0 5vw 5vh 5vw !important;
+    width: 70vw;
+    margin: 0;
+}
+.acerca-de .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  border-radius: 5px;
+}
+
 
 /* ==================== Configuración de la sección de sets ==================== */
 
@@ -106,8 +125,8 @@ h2{
     padding: 3vw;
     border-radius: 8px;
     width: 50vw;
-    /* height: auto; */
 }
+
 /* ==================== Configuración del footer ==================== */
 .footer{
     color: white; /* Color de letra */
@@ -200,12 +219,8 @@ footer img{
     footer span{
         font-size: x-small; /* Tamaño de fuente */
     }
-    .antharious-info img{
-        width: 25px;
-
-    }
-    .antharious-info{
-        gap: 1.5vw;
+     #antharious-logo{
+        display: none;
     }
     .fotografia{
         padding-bottom: 3vh;
@@ -213,10 +228,6 @@ footer img{
 }
 
 @media(max-width:425px){
-    /* Cambio en la distribución de los elementos del body para no agrandar tanto el formulario */
-    body{
-        grid-template-rows: auto 1fr 1fr 1fr 0.3fr 0.4fr auto !important; /* 0.4 -> Relación para no tener tanta altura en el formulario */
-    }
     .sets-div p{
         max-width: 100%;
         font-size: medium !important;
@@ -234,11 +245,10 @@ footer img{
     footer span{
         text-align: center;
     }
-
+/* 
     #antharious-logo{
         display: none;
-    }
-
+    } */
 }
 
 @media(max-height:600px){
@@ -259,7 +269,6 @@ footer img{
         justify-content: center;
         align-items: center;
     }
-
     .btn-card{
         font-size: 0.66rem !important;
     }
@@ -267,10 +276,6 @@ footer img{
 
 /* Relaciones entre pantalla de teléfono y tablet */
 @media(min-width:426px) and (max-width:767px){
-/* @media(min-width:426px) and (max-width:575px){ */
-    body{
-        grid-template-rows: auto 1fr 1fr 1fr 0.5fr 0.65fr auto !important; /* Relación para no tener tanta altura en el formulario */
-    }
     /* Espacio que ocupa el card set */
     .card-set-div{
         max-width: 75% !important;
@@ -300,7 +305,7 @@ footer img{
     }
 }
 
-@media(min-width:425px){
+@media(min-width:426px){
     .card-set{
         margin: 0 !important;
     }
