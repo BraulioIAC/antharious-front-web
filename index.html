@@ -13,10 +13,12 @@
   <body class="grid-container rock-salt-regular">
     <!-- navbar -->
     <header class="w-100">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body w-100 rock-salt-regular"  data-bs-theme="dark"
-        style="background-image: url('./assets/img/fondo_2.jpg'); background-size: cover; background-position: center;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body w-100 rock-salt-regular" data-bs-theme="dark"
+        style="background-image: url('./assets/img/fondo_2.jpg'); background-size: cover; background-position: center; border: 0;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" >Antharious</a>
+                <a class="navbar-brand" href="">
+                    <img src="./assets/img/antharious_logo.png" alt="logo" style="filter: invert(1);" id="nav-logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -69,9 +71,8 @@
                 En total brindamos una duración de aproximadamente tres horas, y una hora por cada
                 set. Como agregado, se puede personalizar cada set antes del evento.
             </p>
-            <!-- Breakpoints de Bootstrap -->
-            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 card-set-div" style="margin: 0;"> 
 
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 card-set-div" style="margin: 0;"> 
                 <!-- Card 1 -->
                 <div class="col card-set">
                     <div class="card h-100 d-flex flex-column card-s rock-salt-regular">
@@ -111,7 +112,7 @@
                                         </ul>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                     </div>
@@ -161,7 +162,7 @@
                                         </ul>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                     </div>
@@ -199,7 +200,7 @@
                                         </ul>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                     </div>
@@ -326,8 +327,9 @@
             </form>
         </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
-        <img src="./assets/img/antharious_b.png" alt="antharious-logo" loading="lazy" id="antharious-logo">
+        <img src="./assets/img/antharious_logo.png" alt="antharious-logo" loading="lazy" id="antharious-logo" style="filter: invert(1);">
         <div class="antharious-info">
             <!-- https://www.iconfinder.com/social-media-icons -->
             <div class="social-media">

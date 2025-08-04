@@ -3,6 +3,7 @@
     /* #6A3E6F */
     /* #3F1342 */
     /* #865980 */
+    /* #E7A038 */
 /* ==================== body config ==================== */
 body{
     margin: 0;
@@ -38,8 +39,8 @@ h2{
 }
 .nav-item:hover{
     transform: scale(1.08);
-    /* padding: 0 0.4vw 0 0.4vw; */
 }
+
 /* ==================== Configuración de la sección acerca de ==================== */
 .acerca-de {
     display: flex;
@@ -88,13 +89,7 @@ h2{
     text-align: left; /* Titulo de la card a la izquierda */
     font-size: 1.2rem; /* Tamaño del titulo de la card */
 }
-/* .card-s{
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-} */
-/* .card-s:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
-    transform: scale(1.05);
-} */
+
 .btn-card{
     font-size: 0.8rem !important;/* Tamaño de fuente del botón de la card */
     transition: background-color 0.5s ease !important; /* Animación del con un hover */
@@ -150,7 +145,9 @@ h2{
 /* ==================== Configuración del footer ==================== */
 .footer{
     color: white; /* Color de letra */
-    background-color: #2B3035; /* Color de fondo */
+    /* Color de fondo */
+    /* background-color: #2B3035;  */
+    background-color: #191919;
     height: 26vh !important; /* Altura */
     /* Display settings */
     display: flex;
@@ -209,6 +206,10 @@ footer img{
     form input, form label, form button, form textarea{
         font-size: small !important;
     }
+    #nav-logo{
+        height: 100px;
+        width: auto;
+    }
 }
 
 @media(max-width:768px) {
@@ -243,6 +244,10 @@ footer img{
     }
     .fotografia{
         padding-bottom: 3vh;
+    }
+    #nav-logo{
+        height: 80px;
+        width: auto;
     }
 }
 
@@ -311,7 +316,7 @@ footer img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    } 
+    }
 }
 
 @media (min-width:768px) {
