@@ -98,7 +98,8 @@ h2{
     transition: background-color 0.5s ease !important; /* Animación del con un hover */
 }
 .btn:hover, .btn-card:hover{
-    background-color: #6B1E78 !important; /* Cambio de background */
+    /* background-color: #6B1E78 !important; */
+    background-color: #970002 !important;
 }
 
 /* ==================== Configuración de la sección de fotografía ==================== */
@@ -183,17 +184,16 @@ footer img{
     height: 2.3rem;
     width: auto;
 }
-
-.social-media-logo{
-    filter: brightness(0) saturate(100%) invert(100%);
-    transition: filter 0.3s ease;
+.social-media-logo {
+    /* blanco inicial, con funciones equivalentes */
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%);
+    /* transition: filter 0.3s ease-in-out; */
 }
 
-.social-media-logo:hover{
-    filter: brightness(0) saturate(100%) invert(35%) sepia(19%) saturate(773%) hue-rotate(287deg) brightness(88%) contrast(90%);
+.social-media-logo:hover {
+    filter: invert(12%) sepia(100%) saturate(6200%) brightness(70%) contrast(110%);
 }
-
-
+    /* filter: brightness(0) saturate(100%) invert(35%) sepia(19%) saturate(773%) hue-rotate(287deg) brightness(88%) contrast(90%); */
 /* ==================== Responsive Design ==================== */
 
 @media(max-width: 1024px){

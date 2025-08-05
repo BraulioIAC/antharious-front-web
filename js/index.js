@@ -7,9 +7,32 @@ btnForm.addEventListener("click", function(event){
 
     if (isFormValid) {
         // Mandar el formulario
+        // Alerta de envío correcto
+        Swal.fire({
+            title: '¡Éxito!',
+            text: 'Tu formulario se envió correctamente.',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            // timer: 4000
+        });
+        // Vaciar textos
+        document.getElementById("nameInput").value = "";
+        document.getElementById("lastNameInput").value = "";
+        document.getElementById("phoneInput").value = "";
+        document.getElementById("emailInput").value = "";
+        document.getElementById("descriptionInput").value = "";
+        clearFormValidations();
     } else{
-        
         //alert("Revisa los campos del formulario")
+        console.log("Error al enviar formulario");
+        
+        Swal.fire({
+            title: '¡Error!',
+            text: 'Verifica los campos',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            // timer: 4000
+        });
     }
 })
 
