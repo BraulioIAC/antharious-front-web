@@ -82,16 +82,24 @@ h2{
     font-size: 1.2rem; /* Tamaño del titulo de la card */
 }
 
-.btn-card{
+.btn-card, .btn-modal{
     font-size: 0.8rem !important;/* Tamaño de fuente del botón de la card */
     transition: background-color 0.5s ease !important; /* Animación del con un hover */
 }
-.btn{
-    transition: background-color 0.5s ease !important; /* Animación del con un hover */
-}
-.btn:hover, .btn-card:hover{
-    /* background-color: #6B1E78 !important; */
+
+.btn-card:hover, .btn-modal{
     background-color: #970002 !important;
+}
+
+#btnForm{
+    background-color: #C0B592 !important;
+    color: #191919;
+    transition: background-color 0.3s ease;
+}
+
+#btnForm:hover{
+    background-color: #970002 !important;
+    color: whitesmoke;
 }
 
 /* ==================== Configuración de la sección de fotografía ==================== */
@@ -113,7 +121,8 @@ h2{
 }
 .contrataciones-form {
     color: white !important;
-    background-color: rgba(193, 180, 146, 0.5);
+    /* background-color: rgba(193, 180, 146, 0.5); */
+    background-color: rgba(38, 38, 38, 0.75);
     padding: 3vw;
     border-radius: 8px;
     width: 50vw;
@@ -121,16 +130,6 @@ h2{
 .contrataciones input{
     font-size:medium !important;
 }
-/* Cambia el color del checkbox cuando está marcado */
-/* .form-check-input:checked {
-    background-color: #970002 !important;  
-    border-color: #970002 !important;       
-    box-shadow: 0 0 10px #970002 !important;
-}
-.form-check-input:focus {
-    border-color: #970002 !important;       
-    box-shadow: 0 0 10px #970002 !important;
-} */
 
 /* ==================== Configuración del footer ==================== */
 .footer{
@@ -151,7 +150,7 @@ footer span{
 }
 /* Tamaño de imagen del footer */
 footer img{
-    height: 16vh;
+    height: 140px;
     width: auto;
 }
 /* Configuración del contenido de redes del footer (texto + iconos) */
@@ -174,12 +173,13 @@ footer img{
 .social-media-logo {
     /* blanco inicial, con funciones equivalentes */
     filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%);
-    /* transition: filter 0.3s ease-in-out; */
+    transition: filter 0.1s ease;
 }
+
 .social-media-logo:hover {
     filter: invert(12%) sepia(100%) saturate(6200%) brightness(70%) contrast(110%);
 }
-    /* filter: brightness(0) saturate(100%) invert(35%) sepia(19%) saturate(773%) hue-rotate(287deg) brightness(88%) contrast(90%); */
+
 /* ==================== Responsive Design ==================== */
 
 @media(max-width: 1024px){
