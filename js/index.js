@@ -7,7 +7,6 @@ btnForm.addEventListener("click", function(event){
     console.log(isFormValid);
     
     if (isFormValid) {
-        // Implementar EmailJS
         let firstNameInput = document.getElementById("nameInput").value.trim();
         let lastNameInput = document.getElementById("lastNameInput").value.trim();
         let phoneInput = document.getElementById("phoneInput").value.trim();
@@ -47,6 +46,7 @@ btnForm.addEventListener("click", function(event){
         document.getElementById("phoneInput").value = "";
         document.getElementById("emailInput").value = "";
         document.getElementById("descriptionInput").value = "";
+        document.getElementById('rockCheck').checked=false;
         clearFormValidations();
     } else{
         Swal.fire({
@@ -124,3 +124,9 @@ function clearFormValidations(){
     })
     return;
 }
+
+(function(){
+    emailjs.init({
+        publicKey: "asi9cMjXhilAxb9gC",
+    });
+})();
