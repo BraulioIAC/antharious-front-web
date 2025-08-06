@@ -1,9 +1,3 @@
-/* ==================== General config ==================== */
-    /* #2C0F2D */
-    /* #6A3E6F */
-    /* #3F1342 */
-    /* #865980 */
-    /* #E7A038 */
 /* ==================== body config ==================== */
 body{
     margin: 0;
@@ -65,9 +59,7 @@ h2{
   border-radius: 5px;
 }
 
-
 /* ==================== Configuración de la sección de sets ==================== */
-
 .card-set-div{
     max-width: 48vw; /* Espacio horizontal que abarca el ancho de las cards */
     justify-content: center; /* Centrado de las cards */
@@ -106,42 +98,39 @@ h2{
 .fotografia{
     padding: 0 10vw 10vh 10vw;
 }
-
 .fotografia-card{
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Animación de la card con un hover */
 }
 .fotografia-card:hover{
     /* box-shadow: 0 10px 34px rgba(0, 0, 0, 0.50); Sombreado */
-    box-shadow: -8px 6px 10px rgba(63, 19, 66, 0.50);
-    border-color: rgba(63, 19, 66, 0.50);
+    box-shadow: -8px 6px 10px rgba(151, 0, 2, 0.50);
+    border-color: rgba(151, 0, 2, 0.50);
     transform: scale(1.05);
 }
 /* ==================== Configuración de la sección de contrataciones ==================== */
 .contrataciones {
   overflow: hidden;
 }
-
 .contrataciones-form {
     color: white !important;
     background-color: rgba(193, 180, 146, 0.5);
-     /* background-color: rgba(38, 38, 38, 0.40);  */
     padding: 3vw;
     border-radius: 8px;
     width: 50vw;
 }
 .contrataciones input{
-    font-size: medium !important;
+    font-size:medium !important;
 }
 /* Cambia el color del checkbox cuando está marcado */
-.form-check-input:checked {
-    background-color: rgba(63, 19, 66) !important;   /* Color de fondo del check */
-    border-color: rgba(63, 19, 66) !important;       /* Color del borde */
-    box-shadow: 0 0 10px rgba(63, 19, 66) !important;
+/* .form-check-input:checked {
+    background-color: #970002 !important;  
+    border-color: #970002 !important;       
+    box-shadow: 0 0 10px #970002 !important;
 }
 .form-check-input:focus {
-    border-color: rgba(63, 19, 66) !important;       /* Color del borde */
-    box-shadow: 0 0 10px rgba(63, 19, 66) !important;
-}
+    border-color: #970002 !important;       
+    box-shadow: 0 0 10px #970002 !important;
+} */
 
 /* ==================== Configuración del footer ==================== */
 .footer{
@@ -157,11 +146,9 @@ h2{
     align-items: center;
     gap: 5vw;
 }
-
 footer span{
     font-size: smaller; /* Espacio entre elementos del footer */
 }
-
 /* Tamaño de imagen del footer */
 footer img{
     height: 16vh;
@@ -189,7 +176,6 @@ footer img{
     filter: invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%);
     /* transition: filter 0.3s ease-in-out; */
 }
-
 .social-media-logo:hover {
     filter: invert(12%) sepia(100%) saturate(6200%) brightness(70%) contrast(110%);
 }
