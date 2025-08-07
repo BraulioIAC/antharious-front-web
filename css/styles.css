@@ -87,7 +87,7 @@ h2{
     transition: background-color 0.5s ease !important; /* Animación del con un hover */
 }
 
-.btn-card:hover, .btn-modal{
+.btn-card:hover, .btn-modal:hover{
     background-color: #970002 !important;
 }
 
