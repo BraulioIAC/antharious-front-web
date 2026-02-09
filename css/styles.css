@@ -244,7 +244,8 @@ footer img{
     }
     /* Tamaño horizontal del div que contiene las redes sosciales */
     .antharious-info{
-        width: 45vw;
+        /* width: 45vw; */
+        width: auto;
     }
     /* Espacio entre elementos del footer (imagen y redes) */
     .footer{
@@ -254,6 +255,11 @@ footer img{
     /* Texto centrado para el span de copyright */
     footer span{
         text-align: center;
+        width: 60vw;
+    }
+
+    .fotografia{
+        padding: 0 7.5vw 10vh 7.5vw;
     }
 }
 
