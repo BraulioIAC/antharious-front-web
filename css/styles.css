@@ -116,6 +116,9 @@ h2{
     border-color: rgba(151, 0, 2, 0.50);
     transform: scale(1.05);
 }
+.fotografia-div{
+    justify-content: center;
+}
 /* ==================== Configuración de la sección de contrataciones ==================== */
 .contrataciones {
   overflow: hidden;
